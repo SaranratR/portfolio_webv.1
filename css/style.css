@@ -1,0 +1,789 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,100;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,200;0,400;1,100;1,300&display=swap');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/pen.css');
+
+body {
+    background: #F4F4F4;
+}
+
+
+
+#Hello {
+    color: #437FC6;
+    font-family: Poppins;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#introMe {
+    color: #000;
+
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#firstPart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    width: 100%;
+    height: 680px;
+    background: rgb(67, 127, 198);
+    background: linear-gradient(315deg, rgba(67, 127, 198, 1) 0%, rgba(244, 244, 244, 1) 15%, rgba(244, 244, 244, 1) 85%, rgba(67, 127, 198, 1) 100%);
+
+}
+
+#secondpart {
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    text-align: start;
+    width: 100%;
+    height: 680px;
+    display: grid;
+    /* background: rgb(67, 127, 198);
+    background: linear-gradient(315deg, rgba(67, 127, 198, 1) 0%, rgba(244, 244, 244, 1) 15%, rgba(244, 244, 244, 1) 85%, rgba(67, 127, 198, 1) 100%); */
+
+}
+
+.column {
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Left and right column */
+.column.side {
+    width: 50%;
+}
+
+/* Middle column */
+.column.middle {
+
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column.first {
+    width: 65%;
+}
+
+.column.sec {
+    width: 35%;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#proj {
+    margin: 85px;
+
+    align-items: flex-start;
+}
+
+.container {
+    display: flex;
+    justify-content: baseline;
+}
+
+
+#mainpoint {
+    background: linear-gradient(90deg, #47505B 0%, rgba(71, 80, 91, 0.42) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+#normalpoint {
+    color: #437FC6;
+    font-family: Poppins;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1;
+    background: linear-gradient(90deg, #437FC6 28.1%, #A6CFFF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    inline-size: none;
+}
+
+#role {
+    color: #666;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    inline-size: none;
+    margin-left: 30px;
+    /* height: 20px; */
+}
+
+#des {
+    color: #666;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-left: 30px;
+}
+
+#skillsMain {
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background: linear-gradient(90deg, #437FC6 0%, rgba(71, 80, 91, 0.42) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+.skills {
+    /* color: #000; */
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding: 8px 15px;
+    border: 2px solid #437FC6;
+    width: max-content;
+    border-radius: 30px;
+    margin-left: 10px;
+    transition: 0.3s ease;
+}
+
+.skills:hover {
+    transform: scale(1.1);
+    background: linear-gradient(90deg, #437FC6 0%, #A6CFFF 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: white;
+    border: 2px solid transparent;
+}
+
+#LanguageMain {
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background: linear-gradient(90deg, #437FC6 0%, rgba(71, 80, 91, 0.42) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    align-items: start;
+    margin-left: 85px;
+    margin-top: 40px;
+}
+
+#contactMain {
+    color: #437FC6;
+    font-family: Poppins;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1;
+    background: linear-gradient(90deg, #437FC6 28.1%, #A6CFFF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    inline-size: none;
+    margin-left: 5px;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+
+}
+
+.responsive {
+    width: 750px;
+    height: 422px;
+}
+
+.checkbtn {
+    cursor: pointer;
+    display: none;
+    float: right;
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+#check {
+    display: none;
+}
+
+button {
+
+    font-family: 'Poppins', sans-serif;
+    appearance: none;
+
+    border-width: 0;
+    box-sizing: border-box;
+    background-color: #F4F4F4;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1em;
+    margin: 0;
+    opacity: 1;
+    outline: 0;
+    padding: 1em 2.2em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-rendering: geometricprecision;
+    text-transform: uppercase;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: nowrap;
+
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 30px;
+    margin: 0 20px;
+}
+
+.tablinks {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#intro {
+    /* border-style: solid; */
+    text-align: start;
+    border-radius: 30px;
+    border-width: 2px;
+    border-color: black;
+    padding-left: 10px;
+    margin-left: 280px;
+    margin-right: 20px;
+    margin-top: 20px;
+    /* padding-top: 10px; */
+    padding-bottom: 10px;
+    text-shadow: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    background-color: rgb(247, 247, 247);
+    perspective: 1000px;
+}
+
+.tab {
+    text-align: end;
+}
+
+#tabBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #F4F4F4;
+    /* White background color */
+    z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#label {
+    display: inline;
+}
+
+#contactInfo {
+    color: #666;
+
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 8px;
+    margin-left: 10px;
+}
+
+#introAbout {
+    color: #000;
+
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 10px;
+}
+
+#myself {
+    margin-left: 130px;
+    color: #666;
+
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+#aboutBox {
+    display: flex;
+    margin-left: 85px;
+    align-items: baseline;
+}
+#contact{
+    display: flex; align-items: center; margin-left: 85px;
+}
+#contactIndosec{
+    display: flex; margin-left: 120px;
+}
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+        margin: 20px;
+    }
+
+    #Hello {
+        color: #437FC6;
+        font-family: Poppins;
+        font-size: 54px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    #introMe {
+        color: #000;
+
+        font-family: Poppins;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    #firstPart {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: start;
+        width: 100%;
+        height: 680px;
+        background: rgb(67, 127, 198);
+        background: linear-gradient(315deg, rgba(67, 127, 198, 1) 0%, rgba(244, 244, 244, 1) 15%, rgba(244, 244, 244, 1) 85%, rgba(67, 127, 198, 1) 100%);
+
+    }
+
+    #mainpoint {
+        font-size: 40px;
+    }
+
+    #normalpoint {
+        font-size: 36px;
+    }
+
+    /* #tabBar {
+        flex-direction: column;
+        text-align: start;
+        padding: 10px;
+    } */
+
+    #buttonTab {
+        /* margin-top: 10px; */
+        margin-left: 10px;
+    }
+
+    /* .tablinks {
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+    } */
+
+    #nameWeb {
+        margin-left: 10px;
+        padding: 5px;
+    }
+
+    #me {
+        height: 60px;
+    }
+
+    #firstPart {
+        height: auto;
+        padding: 20px;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 40px;
+        left: 100%;
+        text-align: center;
+        background-color: #F4F4F4;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        cursor: pointer;
+        line-height: 80px;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .responsive {
+        width: 100%;
+        height: auto;
+    }
+
+
+    #proj {
+        margin: 20px;
+    }
+
+    .row::after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+    .column.side{
+            width: 100%;
+        }
+        
+        .column.middle {
+            width: 100%;
+            margin-left: 80px;
+        }
+
+    .column.first {
+        width: 100%;
+
+    }
+
+    #aboutBox {
+        display: flex;
+        margin-left: 30px;
+        align-items: baseline;
+    }
+
+    .column.sec {
+        width: 100%;
+        margin-left: 60px;
+    }
+
+    #introAbout {
+        margin-left: 0;
+        /* Remove the left margin for smaller screens */
+    }
+    #contact{
+margin-left: 50px;
+    }
+
+    .Main {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #skillsMain {
+        font-size: 36px;
+    }
+
+    .skills-list {
+        flex-wrap: wrap;
+        margin-top: 5px;
+    }
+
+    .skills {
+        font-size: 16px;
+        margin-left: 5px;
+    }
+
+    #LanguageMain {
+        font-size: 32px;
+        margin-left: 80px;
+    }
+
+    #contactMain {
+        font-size: 32px;
+        margin-left: 5px;
+    }
+
+    #contactInfo {
+        font-size: 20px;
+    }
+
+    #myself {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        font-size: 12px;
+    }
+
+    #introMe {
+        color: #000;
+
+        font-family: Poppins;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    /* #tabBar {
+        flex-direction: column;
+        text-align: start;
+        padding: 10px;
+    } */
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        left: -200%;
+        text-align: center;
+        background-color: #F4F4F4;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        cursor: pointer;
+        margin: 50px;
+        line-height: 30px;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+
+
+    #nameWeb {
+        margin-left: 10px;
+        padding: 5px;
+    }
+
+    #me {
+        width: 100%;
+        height: auto;
+    }
+
+    #firstPart {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #mee,
+    #Hello,
+    #introMe,
+    #contactButton {
+        margin: 0; /* Remove margin for better alignment in smaller screens */
+    }
+
+    #mee {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mainpoint {
+
+        font-size: 10px;
+
+    }
+
+    .container {
+        /* display: flex; */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #proj {
+        margin: 10px;
+    }
+
+    .column.side,
+    .column.middle {
+        width: 100%;
+    }
+
+    .row::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+
+    .Main {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .skills-list {
+        flex-wrap: wrap;
+        margin-top: 5px;
+    }
+
+    .skills {
+        font-size: 10px;
+        margin-left: 3px;
+        padding: 5px 8px;
+    }
+
+    #LanguageMain {
+        font-size: 20px;
+        margin-left: 5px;
+    }
+
+    #contactMain {
+        font-size: 20px;
+        margin-left: 5px;
+    }
+
+
+    /* #sidebar {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #F4F4F4;
+        padding: 20px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    #openSidebarBtn {
+        display: block;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        cursor: pointer;
+    } */
+
+    .responsive {
+        width: 100%;
+        height: auto;
+    }
+
+    #myself {
+        font-size: 20px;
+    }
+
+    .row::after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+
+    .column.first,
+    .column.sec {
+        width: 100%;
+    }
+
+    #introAbout {
+        font-size: 20px;
+        margin-left: 0;
+        /* Remove the left margin for smaller screens */
+    }
+    #contactInfo {
+        font-size: 16px;
+        line-height: normal;
+    }
+}

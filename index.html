@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fah's Resume</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/website.css' rel='stylesheet'>
+    <script src="js/func.js"></script>
+</head>
+
+<body>
+    <nav id="tabBar" class="tab" style="display: flex; align-items: center;">
+        <label id="nameWeb"
+            style="display: flex; align-items: center; width: fit-content; margin-left: 10px; padding: 10px;">
+            <div style="background-color: #437FC6; width: 32px; height: 32px; border-radius: 50%; flex-shrink: 0;">
+            </div>
+            <div
+                style="margin-left: 5px; color: #000; font-family: Poppins; font-size: 26px; font-style: normal; font-weight: 400; line-height: normal; flex-shrink: 0;">
+                Saranrat R.</div>
+        </label><input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa fa-bars" style="font-size:24px"></i>
+            </label>
+        <ul id="buttonTab" style="margin-left: auto;">
+            
+            <li class="tablinks" onclick="openTab('home'), uncheckCheckbox()">Home</li>
+            <li class="tablinks" onclick="scrollToResume(),openTab('resume'), uncheckCheckbox()">Projects</li>
+            <li class="tablinks" onclick="openTab('about'), uncheckCheckbox()">about</li>
+            
+            
+            <!-- <button id="openSidebarBtn" onclick="toggleSidebar()">☰</button> -->
+            
+        </ul>
+        
+
+    </nav>
+    <hr>
+
+    <div id="home">
+        <div class="container">
+            <div id="firstPart" class="box" style="opacity: 0; animation: fadeIn 4s forwards;">
+                <div id="mee">
+                    
+                        <img id="me" src="img/meicon.png" style="height: 300px;">
+                    
+                </div>
+                <div>
+                    <h1 id="Hello"> Hello!</h1>
+                    <h2 id="introMe" > I'm Saranrat, a mobile developer,<br> web developer
+                        and UX/UI designer</h2>
+                    <button id="contactButton"
+                        style="border-radius: 30px; border: 2px solid #437FC6; background-color: transparent;"
+                        onclick="scrollToContact()">Contact
+                        me</button>
+                </div>
+            </div>
+        </div>
+        <div>
+
+        </div>
+        <div id="proj">
+            <h1 id="mainpoint"> Project In Class</h1>
+            <div class="container">
+                <div style="margin-left: 40px; float: left;">
+                    <div class="Main"
+                        style="display: flex; align-items: center; width: min-content; height: 10px; margin-top: 50px;">
+                        <div
+                            style="background-color: #437FC6; width: 28px; height: 28px; border-radius: 50%; flex-shrink: 0; margin-right: 3px;">
+                        </div>
+                        <h1 id="normalpoint"> PayStation</h1>
+
+                    </div>
+                    <div style="display: block; align-items: baseline;">
+                        <p id="role"> UX/UI Designer, Back-end Developer</p>
+                        <p id="des">An application for self-checkout in KMUTT Book Store. This application is time-saving for the customer; by scanning the items using image object detection, the application will generate bills based on the detected items and summarize the cost.</p>
+                    </div>
+                </div>
+                
+                    <img id="payStation" src="img/4.png"  class="responsive">
+                
+            </div>
+            <div class="container" style="margin-top: 40px;">
+                
+                    <img id="healJai" src="img/2.png" class="responsive">
+                
+                <div style="margin-left: 40px; float: left;">
+                    <div class="Main"
+                        style="display: flex; align-items: center; width: min-content; height: 10px; margin-top: 50px;">
+                        <div
+                            style="background-color: #437FC6; width: 28px; height: 28px; border-radius: 50%; flex-shrink: 0; margin-right: 3px;">
+                        </div>
+                        <h1 id="normalpoint"> HealJai</h1>
+
+                    </div>
+                    <div style="display: block; align-items: baseline;">
+                        <p id="role"> UX/UI Designer, Back-end Developer</p>
+                        <p id="des">This project aims to contribute to SDG11, which focuses on health and well-being. It enables people to take care of their mental health and promotes mental health awareness through a feature that allows users to anonymously communicate with a psychiatrist.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container" style="margin-top: 40px;">
+                <div style="margin-left: 40px; float: left;">
+                    <div class="Main"
+                        style="display: flex; align-items: center; width: min-content; height: 10px; margin-top: 50px;">
+                        <div
+                            style="background-color: #437FC6; width: 28px; height: 28px; border-radius: 50%; flex-shrink: 0; margin-right: 3px;">
+                        </div>
+                        <h1 id="normalpoint"> ModSport</h1>
+
+                    </div>
+                    <div style="display: block; align-items: baseline;">
+                        <p id="role"> UX/UI Designer, Frontend Developer, Backend Developer</p>
+                        <p id="des">"This project was created to help students and stadium staff book and manage facility more conveniently, saving time by eliminating the need to visit the stadium in person for reservations. It incorporates a stadium reservation system that can search for available facility on campus.</p>
+                    </div>
+                </div>
+                
+                    <img id="ModSport" src="img/1.png" class="responsive">
+                
+            </div>
+            <div class="container" style="margin-top: 40px;">
+                
+                    <img id="modLifes" src="img/3.png" class="responsive">
+                
+                <div style="margin-left: 40px; float: left;">
+                    <div class="Main"
+                        style="display: flex; align-items: center; width: min-content; height: 10px; margin-top: 50px;">
+                        <div
+                            style="background-color: #437FC6; width: 28px; height: 28px; border-radius: 50%; flex-shrink: 0; margin-right: 3px;">
+                        </div>
+                        <h1 id="normalpoint"> ModLifes </h1>
+
+                    </div>
+                    <div style="display: block; align-items: baseline;">
+                        <p id="role"> Frontend Developer, Backend Developer</p>
+                        <p id="des">A website designed to simplify the lives of KMUTT students with numerous features, including schedules, airdrop, and more. My team is responsible for the schedule module, which allows students to create their own timetables, incorporating events or other activities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="info">
+        <div class="row">
+            <div class="column side">
+                <h1 id="mainpoint" style="background: linear-gradient(90deg, #437FC6 0%, rgba(71, 80, 91, 0.42) 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; align-items: start; margin-left: 85px; margin-top: 40px;"> Education
+                </h1>
+                <p style="color: #666;
+
+            font-family: Poppins;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;margin-left: 100px;">King Mongkut's University of Technology Thonburi (KMUTT)</p>
+                <p style="color: #666;
+
+            font-family: Poppins;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;margin-left: 100px;">Bachelor of Science in Computer Science (English Program) <br>
+                    Expected graduation: May 2025</p>
+            </div>
+
+            <div class="column middle">
+                <h1 id="skillsMain"> Skills</h1>
+                <div id="skillList" class="skills-list" style="display: flex;">
+                    <p class="skills">HTML</p>
+                    <p class="skills">CSS</p>
+                    <p class="skills">Figma</p>
+                    <p class="skills">JavaScript </p>
+                    <p class="skills">Flutter </p>
+                    <p class="skills">Nodejs </p>
+                    <p class="skills">Dart </p>
+                    <p class="skills">Python</p>
+                    <p class="skills">Postman</p>
+                    <p class="skills">Firebase</p>
+                    <p class="skills">MongoDB</p>
+                </div>
+
+                <p></p>
+            </div>
+        </div>
+        <div>
+            <h1 id="LanguageMain"> Language</h1>
+            <p style="color: #000;
+
+        font-family: Poppins;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;margin-left: 100px;">Thai (Native) <br> English</p>
+
+        </div>
+    </div>
+    <div id="contactSec">
+        <div id="contact" style="display: flex; align-items: center; margin-left: 85px;">
+            <div style="background-color: #437FC6; width: 32px; height: 32px; border-radius: 50%; flex-shrink: 0;">
+            </div>
+            <h2 id="contactMain">
+                Contact
+            </h2>
+        </div>
+        <div style="display: flex; margin-left: 120px;">
+            <a href="https://github.com/SaranratR" target="_blank" style="color: #437FC6;">
+                <i class="fa fa-github" style="font-size:36px"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/saranrat-roteaim-141054290/" target="_blank" style="color: #437FC6;">
+                <i class="fa fa-linkedin-square" style="font-size:36px; margin-left: 10px;"></i>
+            </a>
+<p id="contactInfo">E-mail: saranrat.rote@outlook.com</p>
+        </div>
+        
+        
+        
+
+    </div>
+
+    <div id="about" style="display: none; margin-top: 60px;">
+        <div class="row">
+            <div class="column first">
+                <div id="aboutBox">
+                    <div
+                        style="background-color: #437FC6; width: 32px; height: 32px; border-radius: 50%; flex-shrink: 0;">
+                    </div>
+                    <h2 id="introAbout"> I'm Saranrat, a mobile developer,<br> web
+                        developer
+                        and UX/UI designer</h2>
+
+                </div>
+                <p id="myself">
+                    Hello!👋 I'm Saranrat, but you can call me Fah. I'm a 20-year-old student currently studying computer science. I have a deep passion for coding and a love for drawing and art. I firmly believe that art is another powerful medium for expressing oneself. In my field of study, I particularly enjoy designing user interfaces and user experiences. I believe that the design of a website or application can reflect the essence of a company and convey its additional value.
+                </p>
+            </div>
+            <div class="column sec">
+                <h1 style="font-family: Poppins;
+                color: #000;
+
+            font-family: Poppins;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;"> What I like to do</h1>
+            <li style="color: #666;
+
+            font-family: Poppins;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;">Coding</li>
+                <li style="color: #666;
+                font-family: Poppins;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;">Drawing</li>
+                <li style="color: #666;
+
+                font-family: Poppins;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;">Singing</li>
+                <li style="color: #666;
+
+                font-family: Poppins;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;">Reading</li>
+            </div>
+            
+
+        </div>
+        <div id="contactSec2">
+            <div id="contact" style="">
+                <div style="background-color: #437FC6; width: 32px; height: 32px; border-radius: 50%; flex-shrink: 0;">
+                </div>
+                <h2 id="contactMain">
+                    Contact
+                </h2>
+            </div>
+            <div id="contactInfosec"style="display: flex; margin-left: 120px;">
+                <a href="https://github.com/SaranratR" target="_blank" style="color: #437FC6;">
+                    <i class="fa fa-github" style="font-size:36px"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/saranrat-roteaim-141054290/" target="_blank" style="color: #437FC6;">
+                    <i class="fa fa-linkedin-square" style="font-size:36px; margin-left: 10px;"></i>
+                </a>
+    <p id="contactInfo">E-mail: saranrat.rote@outlook.com</p>
+            </div>
+            
+            
+            
+    
+        </div>
+    </div>
+
+</body>
+
+</html>
